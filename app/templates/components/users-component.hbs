@@ -1,0 +1,4 @@
+<h2>This is the Users Component!</h2>
+{{#each users as |user|}}
+{{#link-to 'user-details' user.id}}<h3>{{user.name}}</h3>{{/link-to}}
+{{/each}}

@@ -1,0 +1,14 @@
+<h1>This is User Details Page!</h1>
+{{#link-to '/'}}
+<h2>Goto Index Page..</h2>
+{{/link-to}}
+<h3>Name: {{model.user.name}}</h3>
+<h3>Email: {{model.user.email}}</h3>
+<h3>Phone: {{model.user.phone}}</h3>
+<h3>Website: {{model.user.website}}</h3>
+<br>
+<br>
+{{#each model.posts as |post|}}
+<h3>{{post.title}}</h3>
+<p>{{post.body}}</p>
+{{/each}}
